@@ -11,7 +11,7 @@ module.exports = defineConfig({
     headless: false,
 
     launchOptions: {
-      slowMo: 1000
+      slowMo: 300
     },
 
     screenshot: 'only-on-failure',
@@ -19,14 +19,11 @@ module.exports = defineConfig({
     trace: 'on-first-retry'
   },
 
-  projects: [
-    {
-      name: 'chromium',
-      use: {
-        browserName: 'chromium'
-      }
-    }
-  ],
+projects: [
+  {
+    name: 'chromium'
+  }
+],
 
   reporter: [['html', { open: 'always' }]]
 });

@@ -3,4 +3,13 @@ const validUser = {
   password: 'admin123'
 };
 
-module.exports = { validUser };
+const invalidUser = {
+  username: 'wrongUser123',
+  password: 'wrongPass123',
+  expectedError: 'Invalid credentials'
+};
+
+module.exports = {
+  validUser,
+  invalidUser
+};
